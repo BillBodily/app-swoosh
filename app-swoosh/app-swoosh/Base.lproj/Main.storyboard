@@ -17,10 +17,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,15 +98,15 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--League View Controller-->
         <scene sceneID="gKa-rn-c4E">
             <objects>
-                <viewController id="poD-wP-3b7" sceneMemberID="viewController">
+                <viewController id="poD-wP-3b7" customClass="LeagueViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F3D-44-rcq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="desiredLeagueBG" translatesAutoresizingMaskIntoConstraints="NO" id="AtA-kc-PsA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desiredLeagueBG" translatesAutoresizingMaskIntoConstraints="NO" id="AtA-kc-PsA">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="zYR-dJ-m44">
@@ -192,7 +192,7 @@
                         <constraints>
                             <constraint firstItem="oX5-BA-wTd" firstAttribute="top" secondItem="zYR-dJ-m44" secondAttribute="bottom" constant="50" id="4Ud-JE-Yhs"/>
                             <constraint firstItem="AtA-kc-PsA" firstAttribute="leading" secondItem="Vml-18-Vty" secondAttribute="leading" id="BQN-yO-X8o"/>
-                            <constraint firstItem="AtA-kc-PsA" firstAttribute="top" secondItem="Vml-18-Vty" secondAttribute="top" id="PZb-qa-ihd"/>
+                            <constraint firstItem="AtA-kc-PsA" firstAttribute="top" secondItem="F3D-44-rcq" secondAttribute="top" id="Lmd-SS-D7u"/>
                             <constraint firstItem="oY3-iV-gw4" firstAttribute="leading" secondItem="Vml-18-Vty" secondAttribute="leading" constant="15" id="PpU-XS-ToP"/>
                             <constraint firstItem="nZ7-g2-83w" firstAttribute="leading" secondItem="Vml-18-Vty" secondAttribute="leading" constant="15" id="RdY-h0-Z6e"/>
                             <constraint firstItem="zYR-dJ-m44" firstAttribute="top" secondItem="Vml-18-Vty" secondAttribute="top" constant="20" id="T2N-as-XzO"/>
@@ -200,11 +200,11 @@
                             <constraint firstItem="Vml-18-Vty" firstAttribute="bottom" secondItem="nZ7-g2-83w" secondAttribute="bottom" constant="20" id="cCJ-MY-X6S"/>
                             <constraint firstItem="Vml-18-Vty" firstAttribute="trailing" secondItem="zYR-dJ-m44" secondAttribute="trailing" constant="15" id="dfA-Yz-K0K"/>
                             <constraint firstItem="oX5-BA-wTd" firstAttribute="leading" secondItem="Vml-18-Vty" secondAttribute="leading" constant="15" id="dtw-Iu-PVC"/>
-                            <constraint firstItem="Vml-18-Vty" firstAttribute="bottom" secondItem="AtA-kc-PsA" secondAttribute="bottom" id="r7T-Ha-EWl"/>
+                            <constraint firstItem="AtA-kc-PsA" firstAttribute="bottom" secondItem="Vml-18-Vty" secondAttribute="bottom" id="r7T-Ha-EWl"/>
                             <constraint firstItem="Vml-18-Vty" firstAttribute="trailing" secondItem="nZ7-g2-83w" secondAttribute="trailing" constant="15" id="sSH-4z-fEa"/>
                             <constraint firstItem="oY3-iV-gw4" firstAttribute="top" secondItem="F3D-44-rcq" secondAttribute="topMargin" constant="10" id="xIU-B1-MU0"/>
                             <constraint firstItem="zYR-dJ-m44" firstAttribute="leading" secondItem="F3D-44-rcq" secondAttribute="leading" constant="15" id="xzn-hZ-B7v"/>
-                            <constraint firstItem="Vml-18-Vty" firstAttribute="trailing" secondItem="AtA-kc-PsA" secondAttribute="trailing" id="yxH-sD-AIZ"/>
+                            <constraint firstItem="AtA-kc-PsA" firstAttribute="trailing" secondItem="Vml-18-Vty" secondAttribute="trailing" id="yxH-sD-AIZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Vml-18-Vty"/>
                     </view>
@@ -214,10 +214,10 @@
             </objects>
             <point key="canvasLocation" x="933.60000000000002" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Skill View Controller-->
         <scene sceneID="HH6-Lq-om8">
             <objects>
-                <viewController id="nlz-3i-JwF" sceneMemberID="viewController">
+                <viewController id="nlz-3i-JwF" customClass="SkillViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eei-mm-jsb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
