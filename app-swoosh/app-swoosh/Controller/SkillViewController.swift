@@ -9,27 +9,33 @@
 import UIKit
 
 class SkillViewController: UIViewController {
+    
+    var player: Player!
 
+    @IBOutlet weak var finishButton: BorderButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        print(player.desiredLeague)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func onBeginnerTappedButton(_ sender: Any) {
+        selectSkill(skillLevel: "beginner")
     }
-    */
+    
+    @IBAction func onBallerTappedButton(_ sender: Any) {
+        selectSkill(skillLevel: "baller")
+    }
+    
+    @IBAction func onFinishedTappedButton(_ sender: Any) {
+        print(player.desiredLeague)
+        print(player.selectedSkillLevel)
+    }
+    
+    func selectSkill(skillLevel: String) {
+        player.selectedSkillLevel = skillLevel
+        finishButton.isEnabled = true
+    }
 
 }
